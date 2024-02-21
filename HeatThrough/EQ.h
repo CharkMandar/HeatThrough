@@ -72,7 +72,7 @@ public:
 		// начальные и граничные условия
 		for (int i = 0; i <= this->n; i++)
 		{
-			V[i][0] = 1;
+			V[i][0] = sin(pi*this->x[i]);
 		}
 		for (int j = 1; j <= this->m; j++)
 		{
