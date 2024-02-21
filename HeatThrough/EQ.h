@@ -114,7 +114,7 @@ public:
 	// рассчет элементов
 	void run_through(int j)
 	{
-		double A_ = ((this->tau * 3) / (this->h * this->h));
+		double A_ = ((this->tau ) / (this->h * this->h));
 		double B_ = A_;
 		double C_ = this->A;
 		//std::cout << A_ << std::endl << C_ << std::endl;
@@ -123,7 +123,7 @@ public:
 		fi[n] = V[n][j + 1];
 		for (int i = 1; i < this->n; i++)
 		{
-			fi[i] = ((this->f[i][j + 1] * this->tau) + (this->V[i][j]));
+			fi[i] = (this->V[i][j]);
 			//std::cout /* << fi[i] << std::endl*/ << this->V[i][j] << std::endl;
 			//std::cout << fi[i] << std::endl;
 		}
